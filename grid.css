@@ -1,0 +1,66 @@
+.container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-areas:
+    "a a a a b"
+    "c d d e k"
+    "c d d e k"
+    "c d d e k"
+    "g g h h h"
+    "g g h h h"
+    "n r r r m";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 100px 50px 100px;
+}
+
+.container * {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: gray;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.block-1 {
+  grid-area: a;
+}
+
+.block-2 {
+  grid-area: b;
+}
+
+.block-3 {
+  grid-area: c;
+}
+
+.block-4 {
+  grid-area: d;
+}
+
+.block-5 {
+  grid-area: e;
+}
+
+.block-6 {
+  grid-area: k;
+}
+
+.block-7 {
+  grid-area: g;
+}
+
+.block-8 {
+  grid-area: h;
+}
+
+.block-9 {
+  grid-area: n;
+}
+
+.block-10 {
+  grid-area: r;
+}
+
+.block-11 {
+  grid-area: m;
+}
