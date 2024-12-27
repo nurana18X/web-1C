@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Responsive Page</title>
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+  <div>
+    <p>
+      <label>Add new menu:</label>
+      <input type="text" id="newMenu" placeholder="new menu">
+    </p>
+
+    <p>
+      <input type="submit" onclick="addMenu()">
+    </p>
+
+  </div>
+
+  <div id="menu"></div>
+
+  <script type="text/javascript">
+    let arrMenu = ["menu 1", "menu 2", "menu 3"];
+
+    function getMenu() {
+      let menu = "<ul>"
+      for (let i = 0; i < arrMenu.length; i++) {
+        menu += "<li>" + arrMenu[i] + "</li>";
+      }
+
+      menu += "</ul>";
+      return menu;
+    }
+
+    function showMenu() {
+      let menu = getMenu();
+      document.getElementById("menu").innerHTML = menu;
+    }
+
+    function addMenu() {
+      let newMenu = document.getElementById("newMenu").value;
+      arrMenu.push(newMenu);
+      showMenu();
+    }
+
+    showMenu();
+
+
+  </script>
+</body>
+
+</html>

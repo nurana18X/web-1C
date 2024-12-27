@@ -1,0 +1,7 @@
+#menu ul li{
+  display: inline-block;
+  width: 150px;
+  background-color: blue;
+  color: bisque;
+  padding: 5px 30px;
+}
